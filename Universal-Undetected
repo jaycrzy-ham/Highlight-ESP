@@ -1,0 +1,25 @@
+local keys = {
+    "sSCOiRTjHR18HOBtiIseVPwK7gUFHJ1Z",
+    "wanLheKXAYaYyro0aU7p3GDjrmUfWj2Z",
+    "MT7AHnM9KrQ29xZ3QrUkpf10UR97SQNA",
+    "9VSoiUTb5MAXffKDS5lYzQGvkwdMhwOs",
+    "DYVTXk0lO99HmvKFmXeMdd26CRN27JrZ",
+    "Z2N4VSroOjEBg43ZNNhGt9BGBjZQjqtu",
+    "SVTmsdhaui1LBoXWgGXhbZoe6IOSj5sV",
+    "qwDnC8tIlfJDnfDVHU4rOA7uaxpMGink",
+    "W2IkjLrYo1PwZI3cQ3oqarxpXtm2OJ53",
+    "rHXDPlI4HtzlDDvW1j5H1Kt0PTnNksHf",
+    "HsWflt8AcOJSnefJX52250iy23PZoeyb",
+    "OAnKND1c8nSQsFqrR4gBejGzUuf1ZdtV"
+}
+
+for _, key in
+ipairs(keys) do
+    if script_key == key then
+        print("HWID found in database.")
+        loadstring(game:HttpGet("https://pastebin.com/raw/QMptYXnL"))()
+        return
+    end
+end
+
+game.Players.LocalPlayer:Kick("HWID not found in database.")
